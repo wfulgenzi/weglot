@@ -26,7 +26,7 @@ const timeNumToString = timeNum => {
 
 const formatFreeTime = freeTime => {
   const { day, start, end } = freeTime;
-  if (!freeTime) return "No free time was found for this day.";
+  if (!freeTime) return "No free time was found for this week.";
   return (
     day.toString() + " " + timeNumToString(start) + "-" + timeNumToString(end)
   );
