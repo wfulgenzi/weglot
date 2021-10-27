@@ -68,8 +68,8 @@ const findFreeTime = weekBusySlots => {
       // No unavailabilities today, so schedule a meeting at start of day.
       freeTime = {
         day: day,
-        startTime: START_HOUR,
-        endTime: START_HOUR + MEETING_LENGTH
+        start: START_HOUR,
+        end: START_HOUR + MEETING_LENGTH
       };
       return freeTime;
     }
